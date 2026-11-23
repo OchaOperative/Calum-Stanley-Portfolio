@@ -16,3 +16,38 @@ _site/
 # counterproductive to check this file into the repository.
 # Details at https://github.com/github/pages-gem/issues/768
 Gemfile.lock
+
+# Generated files
+dist/
+packages/*/visualize/*
+
+# Ignore installed npm modules
+node_modules/
+
+# Ignore build tool output, e.g. code coverage
+.nyc_output/
+docs/coverage/
+
+# Ignore API documentation
+api-docs/
+
+# Ignore folders from source code editors
+.vscode
+.idea
+
+# Ignore build output when doing manual tests
+_site/
+
+# Don’t check-in generated types
+/types/*
+!/types/index.d.ts
+/packages/build-awesome/types/*
+!/packages/build-awesome/types/index.d.ts
+
+# Ignore test files
+.cache
+test/stubs-layout-cache/_includes/*.js
+
+# Reuse docs from root
+packages/build-awesome/README.md
+packages/build-awesome/docs/

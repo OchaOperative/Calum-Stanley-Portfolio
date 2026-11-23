@@ -1,0 +1,138 @@
+.avatar{
+    border-radius: 50%;
+    border-color: mediumpurple;
+    border-style: solid;
+    border-width: 0.3em;
+    margin: 0.5em;
+    width: 5em;
+    align-self: center;
+}
+
+.page-header{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    background-color: var(--dark-grey);
+    padding: 0.5em;
+    z-index: 2;
+}
+
+.banner{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+}
+
+.visual-pop{
+    box-shadow: 3px 3px 5px black;
+    text-shadow: 3px 3px 3px black;
+    border-radius: 3px;
+}
+
+.under-bordered{
+    border-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: mediumpurple;
+}
+
+li{
+    padding: 0.4em;
+}
+
+.collection{
+    list-style: none;
+    padding-top: 2px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.pod{
+    border-radius: 0.6em;
+    background-color: var(--light-grey);
+}
+
+.card-visual{
+    padding-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-text{
+    margin: 0.5rem;
+}
+
+.card-text h4{
+    margin: 0.2rem;
+    
+}
+
+.card-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: smaller;
+    margin-top: 3em;
+    padding-left: 2px;
+}
+
+.main-body{
+    color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--dark-grey);
+    display: flex;
+    align-self: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    min-width: fit-content;
+    max-width: max-content;
+
+}
+
+.background-video{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.background-video::after{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: var(--overlay-black);
+}
+
+html{
+    background-color: var(--dark-grey);
+    overflow: hidden;
+
+}
+
+.container{
+    margin: 1em;
+}
+
+.icon{
+    object-fit: contain;
+    width: 1.5em;
+}
+
+.centered li{
+    justify-content: center;
+}
+
+:root{
+    --light-grey: #454545;
+    --dark-grey: #262626;
+    --overlay-black: rgba(0, 0, 0, 0.5);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
